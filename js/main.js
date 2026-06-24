@@ -92,7 +92,11 @@ document.addEventListener('DOMContentLoaded', () => {
       return false;
     };
 
-    /* ---- Initial render ---- */
+    /* ---- Initial render (support ?cat=X from homepage links) ---- */
+    const initialCat = parseInt(new URLSearchParams(window.location.search).get('cat')) || 0;
+    if (initialCat > 0) {
+      activeCat = initialCat;
+    }
     highlightSidebar();
     renderProducts();
   }
