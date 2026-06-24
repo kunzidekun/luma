@@ -10,36 +10,11 @@
 </head>
 <body>
 
-<!-- Top Bar -->
-<div class="topbar">
-  <div class="container">
-    <span>📧 info@primecare.com | 📞 +86 20 8888 8888</span>
-    <span>Professional Medical Equipment Supplier</span>
-  </div>
-</div>
+<!-- ===== HEADER (auto-filled by components.js) ===== -->
+<div id="topbar-placeholder"></div>
+<nav id="nav-placeholder"></nav>
 
-<!-- Navigation -->
-<nav class="nav">
-  <div class="container">
-    <a href="index.html" class="nav-logo">
-      <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="#2563eb"/><path d="M12 18h12M18 12v12" stroke="white" stroke-width="3.5" stroke-linecap="round"/></svg>
-      <span class="nav-logo-text">Prime<span>Care</span></span>
-    </a>
-    <button class="nav-toggle" aria-label="Menu">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1e293b" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-    </button>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="service.html">Service</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-
-<!-- Banner -->
+<!-- ===== BANNER ===== -->
 <section class="banner">
   <div class="container">
     <h1>Products</h1>
@@ -47,10 +22,10 @@
   </div>
 </section>
 
-<!-- Products Layout -->
+<!-- ===== PRODUCTS LAYOUT ===== -->
 <section class="page-layout container">
 
-  <!-- Sidebar -->
+  <!-- === Sidebar (categories) === -->
   <aside class="sidebar">
     <div class="sidebar-box">
       <div class="sidebar-title">Categories</div>
@@ -73,13 +48,16 @@
     </div>
   </aside>
 
-  <!-- Main -->
+  <!-- === Main Content === -->
   <main>
     <div class="breadcrumb">
       <a href="index.html">Home</a> <span>/</span> <span>Products</span>
     </div>
     <h2 class="page-title" style="border-bottom-color:var(--blue);">All Products</h2>
 
+    <!-- == PRODUCT GRID == -->
+    <!-- HOW TO ADD A PRODUCT: Copy a <a class="product-card"> block,
+         paste it below, change the SVG and <h3> name. -->
     <div class="product-grid">
 
       <!-- Product 1 -->
@@ -282,6 +260,8 @@
         </div>
       </a>
 
+      <!-- == ADD NEW PRODUCTS HERE (copy the block above and paste below) == -->
+
     </div>
 
     <!-- Pagination -->
@@ -297,48 +277,10 @@
   </main>
 </section>
 
-<!-- Footer -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <h3>PrimeCare Medical</h3>
-        <p>Professional medical equipment supplier dedicated to providing high-quality healthcare solutions worldwide. ISO 13485 certified.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="service.html">Service</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Products</h4>
-        <ul>
-          <li><a href="products.html?cat=1">Clinical Analyzer</a></li>
-          <li><a href="products.html?cat=3">OR Equipment</a></li>
-          <li><a href="products.html?cat=6">X-Ray Machine</a></li>
-          <li><a href="products.html?cat=5">Ultrasound</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul>
-          <li>📧 info@primecare.com</li>
-          <li>📞 +86 20 8888 8888</li>
-          <li>📍 Guangzhou, China</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 PrimeCare Medical. All rights reserved.</span>
-      <span>Professional Medical Equipment Supplier</span>
-    </div>
-  </div>
-</footer>
+<!-- ===== FOOTER ===== -->
+<footer id="footer-placeholder"></footer>
 
 <script src="js/main.js"></script>
+<script src="js/components.js"></script>
 </body>
 </html>

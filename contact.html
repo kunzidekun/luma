@@ -10,32 +10,8 @@
 </head>
 <body>
 
-<div class="topbar">
-  <div class="container">
-    <span>📧 info@primecare.com | 📞 +86 20 8888 8888</span>
-    <span>Professional Medical Equipment Supplier</span>
-  </div>
-</div>
-
-<nav class="nav">
-  <div class="container">
-    <a href="index.html" class="nav-logo">
-      <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="#2563eb"/><path d="M12 18h12M18 12v12" stroke="white" stroke-width="3.5" stroke-linecap="round"/></svg>
-      <span class="nav-logo-text">Prime<span>Care</span></span>
-    </a>
-    <button class="nav-toggle" aria-label="Menu">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1e293b" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-    </button>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="service.html">Service</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-</nav>
+<div id="topbar-placeholder"></div>
+<nav id="nav-placeholder"></nav>
 
 <section class="banner">
   <div class="container">
@@ -48,6 +24,7 @@
   <div class="container">
     <div class="contact-grid">
 
+      <!-- Contact Form -->
       <div>
         <h3 style="margin-bottom:1rem;">Send a Message</h3>
         <form onsubmit="event.preventDefault();alert('Thank you for your inquiry. We will get back to you within 24 hours.');">
@@ -83,6 +60,7 @@
         </form>
       </div>
 
+      <!-- Contact Info -->
       <div>
         <h3 style="margin-bottom:1rem;">Contact Information</h3>
 
@@ -133,37 +111,9 @@
   </div>
 </section>
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <h3>PrimeCare Medical</h3>
-        <p>Professional medical equipment supplier. ISO 13485 certified.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul>
-          <li>📧 info@primecare.com</li>
-          <li>📞 +86 20 8888 8888</li>
-          <li>📍 Guangzhou, China</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 PrimeCare Medical. All rights reserved.</span>
-    </div>
-  </div>
-</footer>
+<footer id="footer-placeholder"></footer>
 
 <script src="js/main.js"></script>
+<script src="js/components.js"></script>
 </body>
 </html>
