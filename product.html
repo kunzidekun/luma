@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Luma 产品详情 — 智能桌面照明伴侣，自适应光线、无线充电、专注计时。查看完整技术规格。">
+  <title>产品 — Luma</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='oklch(0.7 0.14 55)'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ==================== Navigation ==================== -->
+<nav class="nav" role="navigation" aria-label="主导航">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <span class="nav-logo-dot"></span>
+      Luma
+    </a>
+    <button class="nav-toggle" aria-label="打开菜单" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M3 6h18M3 12h18M3 18h18"/>
+      </svg>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="product.html">产品</a></li>
+      <li><a href="about.html">关于</a></li>
+      <li><a href="contact.html">联系</a></li>
+      <li><a href="contact.html" class="btn btn-primary">预购</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ==================== Page Hero ==================== -->
+<section class="page-hero">
+  <div class="container">
+    <span class="label reveal">产品</span>
+    <h1 class="reveal reveal-delay-1">Luma</h1>
+    <p class="reveal reveal-delay-2">智能桌面照明伴侣 · 为效率与健康而设计</p>
+  </div>
+</section>
+
+<!-- ==================== Product Overview ==================== -->
+<section class="section">
+  <div class="container">
+    <div class="showcase-grid reveal">
+      <div class="showcase-visual" style="background:var(--surface-alt);">
+        <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:80%;height:80%;">
+          <defs>
+            <radialGradient id="prodGlow" cx="50%" cy="70%" r="60%">
+              <stop offset="0%" stop-color="oklch(0.85 0.12 55 / 0.2)"/>
+              <stop offset="100%" stop-color="oklch(0.85 0.12 55 / 0)"/>
+            </radialGradient>
+          </defs>
+          <ellipse cx="200" cy="260" rx="140" ry="40" fill="url(#prodGlow)"/>
+          <!-- Lamp front view -->
+          <!-- Base -->
+          <ellipse cx="200" cy="255" rx="65" ry="12" fill="oklch(0.22 0.01 50)"/>
+          <rect x="185" y="245" width="30" height="10" rx="3" fill="oklch(0.25 0.01 50)"/>
+          <!-- Stem -->
+          <rect x="196" y="175" width="8" height="72" rx="4" fill="oklch(0.3 0.01 50)"/>
+          <!-- Head -->
+          <ellipse cx="200" cy="165" rx="55" ry="22" fill="oklch(0.88 0.008 75)" stroke="oklch(0.78 0.008 70)" stroke-width="1.5"/>
+          <ellipse cx="200" cy="170" rx="40" ry="12" fill="oklch(0.92 0.1 55 / 0.3)">
+            <animate attributeName="opacity" values="0.3;0.15;0.3" dur="3s" repeatCount="indefinite"/>
+          </ellipse>
+          <!-- Glow ring -->
+          <circle cx="200" cy="165" r="58" fill="none" stroke="oklch(0.85 0.08 55 / 0.15)" stroke-width="2">
+            <animate attributeName="r" values="58;63;58" dur="3s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.15;0.05;0.15" dur="3s" repeatCount="indefinite"/>
+          </circle>
+        </svg>
+      </div>
+      <div class="showcase-text">
+        <span class="label">概述</span>
+        <h2>重新定义桌面照明</h2>
+        <p>Luma 不止是一盏台灯。它将高品质照明、无线充电、智能节律管理融为一体，用极简的设计语言重新定义桌面的光环境。</p>
+        <ul class="showcase-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            Ra &gt; 95 高显色，全光谱 LED 灯珠
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            2700K–6500K 无级色温，自适应调节
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            15W Qi 无线快充，即放即充
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            无频闪 PWM 调光，TÜV 护眼认证
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Features Deep Dive ==================== -->
+<section class="section section-alt" id="features">
+  <div class="container">
+    <div class="section-title reveal">
+      <span class="label">核心功能</span>
+      <h2>每一面，都出色</h2>
+    </div>
+    <div class="feature-grid reveal">
+      <div class="feature-card">
+        <div class="feature-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2"/>
+          </svg>
+        </div>
+        <h3>自适应光线</h3>
+        <p>高精度环境光传感器实时监测桌面照度，AI 算法自动匹配最佳色温与亮度。阅读模式偏暖，工作模式偏冷，休息模式柔和过渡。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 6v6l4 2"/>
+          </svg>
+        </div>
+        <h3>专注模式</h3>
+        <p>内置番茄工作法计时器，25 分钟专注与 5 分钟休息循环。灯光随状态切换：专注时冷白光提神，休息时暖光放松。数据同步至 Luma App。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 18H3a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v2"/>
+            <path d="M9 18h6"/>
+            <path d="M19 14l-7-4v8l7-4z"/>
+          </svg>
+        </div>
+        <h3>无线充电底座</h3>
+        <p>集成 15W Qi 无线充电模块，兼容 iPhone MagSafe 与 Android Qi 设备。智能异物检测，充电状态一目了然。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+            <line x1="9" y1="9" x2="9.01" y2="9"/>
+            <line x1="15" y1="9" x2="15.01" y2="9"/>
+          </svg>
+        </div>
+        <h3>1680 万色氛围光</h3>
+        <p>灯体背部隐藏式氛围灯带，支持 1680 万色自定义。可随音乐律动、随专注计时切换，或设为固定氛围色。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          </svg>
+        </div>
+        <h3>智能节律</h3>
+        <p>学习你的日常作息与使用习惯，自动调节光照策略。清晨模拟日出渐变，深夜自动切换至暖光助眠模式。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+          </svg>
+        </div>
+        <h3>App 联动</h3>
+        <p>通过 Luma App（iOS / Android）远程控制灯光、设置场景、查看使用数据。支持 HomeKit 与 Matter 智能家居协议。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Gallery ==================== -->
+<section class="section">
+  <div class="container">
+    <div class="section-title reveal">
+      <span class="label">产品图集</span>
+      <h2>细节见真章</h2>
+    </div>
+    <div class="gallery-grid reveal">
+      <div class="gallery-item">
+        <svg viewBox="0 0 600 300" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:90%;height:90%;">
+          <defs>
+            <linearGradient id="deskG" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="85%" stop-color="oklch(0.92 0.005 75)"/>
+              <stop offset="100%" stop-color="oklch(0.75 0.008 65)"/>
+            </linearGradient>
+          </defs>
+          <rect x="0" y="240" width="600" height="60" fill="url(#deskG)"/>
+          <rect x="50" y="160" width="140" height="20" rx="5" fill="oklch(0.9 0.005 75)" stroke="oklch(0.8 0.008 70)" stroke-width="1"/>
+          <!-- Wide desk view -->
+          <rect x="120" y="210" width="200" height="30" rx="4" fill="oklch(0.25 0.01 50)"/>
+          <rect x="200" y="150" width="12" height="60" rx="5" fill="oklch(0.3 0.01 50)"/>
+          <ellipse cx="260" cy="140" rx="50" ry="18" fill="oklch(0.88 0.008 75)" stroke="oklch(0.78 0.008 70)" stroke-width="1.5"/>
+          <ellipse cx="260" cy="144" rx="35" ry="10" fill="oklch(0.92 0.1 55 / 0.25)"/>
+          <!-- Keyboard hint -->
+          <rect x="140" y="195" width="160" height="16" rx="3" fill="oklch(0.85 0.005 70)" transform="rotate(-3 220 203)"/>
+          <rect x="310" y="200" width="60" height="60" rx="8" fill="oklch(0.98 0.003 75)" transform="rotate(10 340 230)"/>
+          <!-- Small items -->
+          <rect x="380" y="218" width="30" height="22" rx="3" fill="oklch(0.9 0.01 50)"/>
+          <circle cx="395" cy="210" r="8" fill="oklch(0.3 0.02 40)"/>
+          <!-- Warm glow overlay -->
+          <ellipse cx="260" cy="220" rx="150" ry="40" fill="oklch(0.85 0.08 55 / 0.08)"/>
+        </svg>
+      </div>
+      <div class="gallery-item">
+        <svg viewBox="0 0 280 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:70%;height:70%;">
+          <ellipse cx="140" cy="130" rx="70" ry="14" fill="oklch(0.85 0.08 55 / 0.12)"/>
+          <ellipse cx="140" cy="150" rx="60" ry="10" fill="oklch(0.25 0.01 50)"/>
+          <rect x="130" y="100" width="20" height="50" rx="4" fill="oklch(0.3 0.01 50)"/>
+          <path d="M110 85 Q110 75 130 72 L150 72 Q170 75 170 85 L165 95 Q155 100 140 100 Q130 100 120 95 Z" fill="oklch(0.88 0.008 75)" stroke="oklch(0.78 0.008 70)" stroke-width="1.5"/>
+          <rect x="120" y="92" width="40" height="5" rx="2" fill="oklch(0.92 0.1 55 / 0.3)"/>
+          <text x="140" y="180" text-anchor="middle" font-family="Sora, sans-serif" font-size="10" font-weight="500" fill="oklch(0.6 0.01 60)">精密 CNC 加工灯头</text>
+        </svg>
+      </div>
+      <div class="gallery-item">
+        <svg viewBox="0 0 280 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:70%;height:70%;">
+          <defs>
+            <radialGradient id="chargeGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="oklch(0.6 0.12 140 / 0.2)"/>
+              <stop offset="100%" stop-color="oklch(0.6 0.12 140 / 0)"/>
+            </radialGradient>
+          </defs>
+          <ellipse cx="140" cy="130" rx="70" ry="14" fill="oklch(0.25 0.01 50)"/>
+          <ellipse cx="140" cy="125" rx="55" ry="10" fill="oklch(0.28 0.01 50)"/>
+          <circle cx="140" cy="125" r="6" fill="oklch(0.6 0.12 140)">
+            <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+          </circle>
+          <ellipse cx="140" cy="125" rx="25" ry="6" fill="url(#chargeGlow)"/>
+          <rect x="125" y="105" width="30" height="20" rx="6" fill="oklch(0.35 0.01 50)" transform="rotate(180 140 115)"/>
+          <text x="140" y="180" text-anchor="middle" font-family="Sora, sans-serif" font-size="10" font-weight="500" fill="oklch(0.6 0.01 60)">15W Qi 无线充电</text>
+        </svg>
+      </div>
+      <div class="gallery-item">
+        <svg viewBox="0 0 280 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:70%;height:70%;">
+          <defs>
+            <linearGradient id="specGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="oklch(0.6 0.1 60)"/>
+              <stop offset="50%" stop-color="oklch(0.7 0.08 80)"/>
+              <stop offset="100%" stop-color="oklch(0.55 0.08 240)"/>
+            </linearGradient>
+          </defs>
+          <rect x="10" y="80" width="260" height="4" rx="2" fill="url(#specGrad)"/>
+          <text x="30" y="100" font-family="Sora, sans-serif" font-size="8" font-weight="500" fill="oklch(0.6 0.01 60)">2700K</text>
+          <text x="250" y="100" text-anchor="end" font-family="Sora, sans-serif" font-size="8" font-weight="500" fill="oklch(0.6 0.01 60)">6500K</text>
+          <circle cx="60" cy="82" r="5" fill="oklch(0.7 0.14 55)">
+            <animate attributeName="cx" values="60;220;60" dur="6s" repeatCount="indefinite"/>
+          </circle>
+          <text x="140" y="140" text-anchor="middle" font-family="Sora, sans-serif" font-size="10" font-weight="500" fill="oklch(0.6 0.01 60)">无级色温调节</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Technical Specs ==================== -->
+<section class="section section-alt" id="specs">
+  <div class="container">
+    <div class="section-title reveal">
+      <span class="label">技术规格</span>
+      <h2>参数一览</h2>
+    </div>
+    <div class="spec-detail-grid reveal">
+      <div class="spec-detail-group">
+        <h3>照明</h3>
+        <div class="spec-detail-row">
+          <span class="spec-label">光源类型</span>
+          <span class="spec-value">全光谱 LED × 60 颗</span>
+        </div>
+        <div class="spec-detail-row">
+          <span class="spec-label">显色指数 (Ra)</span>
+          <span class="spec-value">&gt; 95</span>
+        </div>
+        <div class="spec-detail-row">
+          <span class="spec-label">色温范围</span>
+          <span class="spec-value">2700K – 6500K</span>
+        </div>
+        <div class="spec-detail-row">
+          <span class="spec-label">照度 (40cm)</span>
+          <span class="spec-value">≥ 1200 lux</span>
+        </div>
+        <div class="spec-detail-row">
+          <span class="spec-label">调光方式</span>
+          <span class="spec-value">无频闪 PWM / DC 混合</span>
+        </div>
+        <div class="spec-detail-row">
+          <span class="spec-label">护眼认证</span>
+          <span class="spec-value">TÜV Rheinland</span>
+        </div>
+      </div>
+      <div class="spec-detail-group">
+        <h3>无线充电</h3>
+        <div class="spec-detail-row">
+          <span class="spec-label">标准</span>
+          <span class="spec-value">Qi 2.0</span>
+        </div>
+        <div class="spec-detail-row">
+          <span class="spec-label">最大功率</span>
+          <span class="spec-value">15W</span>
+        </div>
+        <div class="spec-detail-row">
+          <span class="spec-label">兼容性</span>
+          <span class="spec-value">iPhone / Android / 耳机</span>
+        </div>
+        <div class="spec-detail-row">
+          <span class="spec-label">异物检测</span>
+          <span class="spec-value">FOD 智能保护</span>
+        </div>
+      </div>
+      <div class="spec-detail-group">
+        <h3>连接</h3>
+        <div class="spec-detail-row">
+          <span class="spec-label">无线</span>
+          <span class="spec-value">Wi-Fi 6 / BLE 5.3</span>
+        </div>
+        <div class="spec-detail-row">
+          <span class="spec-label">智能家居</span>
+          <span class="spec-value">HomeKit / Matter</span>
+        </div>
+        <div class="spec-detail-row">
+          <span class="spec-label">App</span>
+          <span class="spec-value">iOS 16+ / Android 13+</span>
+        </div>
+        <div class="spec-detail-row">
+          <span class="spec-label">传感器</span>
+          <span class="spec-value">环境光 / 接近 / 温度</span>
+        </div>
+      </div>
+      <div class="spec-detail-group">
+        <h3>物理参数</h3>
+        <div class="spec-detail-row">
+          <span class="spec-label">高度</span>
+          <span class="spec-value">455 mm</span>
+        </div>
+        <div class="spec-detail-row">
+          <span class="spec-label">底座直径</span>
+          <span class="spec-value">180 mm</span>
+        </div>
+        <div class="spec-detail-row">
+          <span class="spec-label">灯头尺寸</span>
+          <span class="spec-value">350 × 55 mm</span>
+        </div>
+        <div class="spec-detail-row">
+          <span class="spec-label">重量</span>
+          <span class="spec-value">1.8 kg</span>
+        </div>
+        <div class="spec-detail-row">
+          <span class="spec-label">材质</span>
+          <span class="spec-value">铝合金 / ABS / 硅胶</span>
+        </div>
+        <div class="spec-detail-row">
+          <span class="spec-label">颜色</span>
+          <span class="spec-value">深空灰 · 珍珠白</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CTA ==================== -->
+<section class="cta-section reveal">
+  <div class="container">
+    <h2>有兴趣？</h2>
+    <p>首批预售限量供应，立即注册获取最新信息。</p>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn btn-primary btn-lg">立即预购</a>
+      <a href="about.html" class="btn btn-secondary btn-lg">了解品牌</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Footer ==================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="nav-logo-dot"></span>
+          Luma
+        </a>
+        <p>为你的桌面而生。智能照明，本该如此。</p>
+      </div>
+      <div class="footer-col">
+        <h4>产品</h4>
+        <ul>
+          <li><a href="product.html">产品详情</a></li>
+          <li><a href="product.html#specs">技术规格</a></li>
+          <li><a href="contact.html">预购</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>关于</h4>
+        <ul>
+          <li><a href="about.html">品牌故事</a></li>
+          <li><a href="about.html#values">设计理念</a></li>
+          <li><a href="contact.html">联系我们</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>支持</h4>
+        <ul>
+          <li><a href="contact.html">帮助中心</a></li>
+          <li><a href="contact.html">售后服务</a></li>
+          <li><a href="contact.html">常见问题</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Luma. All rights reserved.</span>
+      <span>Designed with intention.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

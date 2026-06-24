@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Luma — 智能桌面照明伴侣。自适应光线、无线充电、专注计时，为你的桌面而生。">
+  <title>Luma — 智能桌面照明伴侣</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='oklch(0.7 0.14 55)'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ==================== Navigation ==================== -->
+<nav class="nav" role="navigation" aria-label="主导航">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <span class="nav-logo-dot"></span>
+      Luma
+    </a>
+    <button class="nav-toggle" aria-label="打开菜单" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M3 6h18M3 12h18M3 18h18"/>
+      </svg>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="product.html">产品</a></li>
+      <li><a href="about.html">关于</a></li>
+      <li><a href="contact.html">联系</a></li>
+      <li><a href="contact.html" class="btn btn-primary">预购</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ==================== Hero ==================== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content reveal">
+      <span class="label">全新发布</span>
+      <h1>Light that <br>thinks.</h1>
+      <p>Luma 是一款智能桌面照明伴侣。自适应光线算法、无线充电、专注计时，融入每一处设计细节。</p>
+      <div class="hero-actions">
+        <a href="product.html" class="btn btn-primary btn-lg">探索产品</a>
+        <a href="#features" class="btn btn-secondary btn-lg">了解更多</a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal reveal-delay-2">
+      <div class="lamp-container">
+        <svg viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;">
+          <!-- Light glow (behind lamp) -->
+          <defs>
+            <radialGradient id="glowGrad" cx="50%" cy="75%" r="50%">
+              <stop offset="0%" stop-color="oklch(0.85 0.12 55 / 0.35)"/>
+              <stop offset="40%" stop-color="oklch(0.85 0.12 55 / 0.12)"/>
+              <stop offset="100%" stop-color="oklch(0.85 0.12 55 / 0)"/>
+            </radialGradient>
+            <radialGradient id="lightCone" cx="50%" cy="0%" r="80%">
+              <stop offset="0%" stop-color="oklch(0.9 0.08 55 / 0.2)"/>
+              <stop offset="100%" stop-color="oklch(0.9 0.08 55 / 0)"/>
+            </radialGradient>
+            <linearGradient id="armGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="oklch(0.35 0.01 50)"/>
+              <stop offset="100%" stop-color="oklch(0.25 0.01 50)"/>
+            </linearGradient>
+            <linearGradient id="headGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="oklch(0.9 0.005 75)"/>
+              <stop offset="100%" stop-color="oklch(0.8 0.008 70)"/>
+            </linearGradient>
+            <filter id="glowFilter">
+              <feGaussianBlur stdDeviation="8" result="blur"/>
+              <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+            <filter id="softGlow">
+              <feGaussianBlur stdDeviation="4"/>
+            </filter>
+          </defs>
+
+          <!-- Light cone -->
+          <path d="M200 260 L120 490 L280 490 Z" fill="url(#lightCone)" opacity="0.8">
+            <animate attributeName="opacity" values="0.8;0.5;0.8" dur="4s" repeatCount="indefinite"/>
+          </path>
+
+          <!-- Ambient glow -->
+          <ellipse cx="200" cy="400" rx="160" ry="120" fill="url(#glowGrad)" class="lamp-glow"/>
+
+          <!-- Base plate -->
+          <ellipse cx="200" cy="470" rx="75" ry="18" fill="oklch(0.2 0.01 50)" stroke="oklch(0.3 0.01 50)" stroke-width="1"/>
+          <ellipse cx="200" cy="467" rx="65" ry="14" fill="oklch(0.25 0.01 50)"/>
+
+          <!-- Base body -->
+          <rect x="185" y="450" width="30" height="18" rx="3" fill="oklch(0.22 0.01 50)"/>
+
+          <!-- Wireless charging indicator -->
+          <circle cx="200" cy="460" r="4" fill="oklch(0.6 0.12 140)" opacity="0.8"/>
+
+          <!-- Lower arm -->
+          <rect x="196" y="320" width="8" height="132" rx="4" fill="url(#armGrad)"/>
+
+          <!-- Joint -->
+          <circle cx="200" cy="318" r="7" fill="oklch(0.3 0.01 50)" stroke="oklch(0.4 0.01 50)" stroke-width="1.5"/>
+
+          <!-- Upper arm -->
+          <rect x="196" y="220" width="8" height="100" rx="4" fill="url(#armGrad)" transform="rotate(15 200 220)"/>
+
+          <!-- Upper joint -->
+          <circle cx="206" cy="215" r="6" fill="oklch(0.3 0.01 50)" stroke="oklch(0.4 0.01 50)" stroke-width="1.5"/>
+
+          <!-- Lamp head body -->
+          <path d="M170 215 Q170 180 195 175 L215 175 Q240 180 240 215 L235 230 Q220 240 200 240 Q185 240 175 230 Z" fill="url(#headGrad)" stroke="oklch(0.75 0.008 70)" stroke-width="1.5"/>
+
+          <!-- Light source (LED panel) -->
+          <rect x="182" y="232" width="36" height="6" rx="3" fill="oklch(0.9 0.1 55)">
+            <animate attributeName="opacity" values="1;0.7;1" dur="3s" repeatCount="indefinite"/>
+          </rect>
+
+          <!-- Light glow on surface -->
+          <ellipse cx="200" cy="490" rx="100" ry="8" fill="oklch(0.85 0.08 55 / 0.3)">
+            <animate attributeName="opacity" values="0.3;0.15;0.3" dur="4s" repeatCount="indefinite"/>
+          </ellipse>
+
+          <!-- Power button -->
+          <circle cx="200" cy="445" r="5" fill="oklch(0.18 0.01 50)" stroke="oklch(0.35 0.01 50)" stroke-width="1"/>
+          <circle cx="200" cy="445" r="2" fill="oklch(0.7 0.14 55)">
+            <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+          </circle>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Feature Strip ==================== -->
+<section class="section" id="features" style="padding-top:0;">
+  <div class="container">
+    <div class="feature-strip reveal">
+      <div class="feature-strip-item">
+        <div class="feature-strip-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+        </div>
+        <h3>自适应光线</h3>
+        <p>内置环境光传感器，根据时间与活动自动调节色温与亮度</p>
+      </div>
+      <div class="feature-strip-item">
+        <div class="feature-strip-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 18H3a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v2"/>
+            <path d="M9 18h6"/>
+            <path d="M19 14l-7-4v8l7-4z"/>
+          </svg>
+        </div>
+        <h3>无线充电</h3>
+        <p>底座集成 Qi 快充，手机随放随充，桌面不再有线的束缚</p>
+      </div>
+      <div class="feature-strip-item">
+        <div class="feature-strip-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 6v6l4 2"/>
+          </svg>
+        </div>
+        <h3>专注计时</h3>
+        <p>内置番茄钟与专注模式，灯光随工作节奏自然切换</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Showcase: Design ==================== -->
+<section class="section">
+  <div class="container">
+    <div class="showcase-grid reveal">
+      <div class="showcase-visual">
+        <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:85%;height:85%;">
+          <defs>
+            <linearGradient id="deskGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="oklch(0.95 0.005 70)"/>
+              <stop offset="100%" stop-color="oklch(0.9 0.008 65)"/>
+            </linearGradient>
+            <radialGradient id="ambient" cx="50%" cy="30%" r="60%">
+              <stop offset="0%" stop-color="oklch(0.85 0.08 55 / 0.15)"/>
+              <stop offset="100%" stop-color="oklch(0 0 0 / 0)"/>
+            </radialGradient>
+          </defs>
+
+          <!-- Desk surface -->
+          <rect x="20" y="200" width="360" height="8" rx="4" fill="oklch(0.65 0.02 55)"/>
+
+          <!-- Ambient light on desk -->
+          <ellipse cx="200" cy="200" rx="120" ry="30" fill="oklch(0.85 0.08 55 / 0.2)">
+            <animate attributeName="opacity" values="0.2;0.1;0.2" dur="4s" repeatCount="indefinite"/>
+          </ellipse>
+
+          <!-- Lamp (simplified side view) -->
+          <!-- Base -->
+          <rect x="160" y="185" width="50" height="15" rx="5" fill="oklch(0.25 0.01 50)"/>
+          <!-- Arm -->
+          <path d="M185 185 L170 130 L220 90 L225 95 L175 135 L190 185" fill="oklch(0.3 0.01 50)"/>
+          <!-- Head -->
+          <path d="M200 85 L250 70 Q260 68 265 75 L265 95 Q260 100 250 98 L200 90 Z" fill="oklch(0.85 0.008 70)" stroke="oklch(0.75 0.008 70)" stroke-width="1"/>
+          <!-- Light beam -->
+          <path d="M210 95 L170 200 L270 200 Z" fill="oklch(0.9 0.08 55 / 0.08)"/>
+
+          <!-- Small plant -->
+          <ellipse cx="320" cy="205" rx="18" ry="10" fill="oklch(0.5 0.08 140)"/>
+          <rect x="315" y="195" width="10" height="12" rx="3" fill="oklch(0.4 0.1 130)"/>
+
+          <!-- Notebook -->
+          <rect x="70" y="170" width="70" height="30" rx="3" fill="oklch(0.9 0.005 70)" transform="rotate(-5 105 185)"/>
+          <rect x="75" y="175" width="55" height="2" rx="1" fill="oklch(0.7 0.01 60)" transform="rotate(-5 102 176)"/>
+          <rect x="75" y="180" width="40" height="2" rx="1" fill="oklch(0.7 0.01 60)" transform="rotate(-5 95 181)"/>
+
+          <!-- Phone charging -->
+          <rect x="100" y="140" width="40" height="60" rx="6" fill="oklch(0.2 0.01 50)" transform="rotate(15 120 170)"/>
+
+          <!-- Coffee mug -->
+          <rect x="300" y="165" width="14" height="25" rx="3" fill="oklch(0.85 0.01 50)"/>
+          <path d="M314 172 Q322 172 322 180 Q322 188 314 188" fill="none" stroke="oklch(0.85 0.01 50)" stroke-width="2"/>
+          <ellipse cx="307" cy="165" rx="7" ry="3" fill="oklch(0.2 0.01 40)"/>
+
+          <!-- Warm ambient glow -->
+          <ellipse cx="200" cy="100" rx="180" ry="120" fill="url(#ambient)"/>
+        </svg>
+      </div>
+      <div class="showcase-text">
+        <span class="label">设计哲学</span>
+        <h2>为你的桌面而生</h2>
+        <p>Luma 的设计从桌面场景出发。每一处曲线、每一个材质选择，都在回应一个核心问题：如何让光更好地服务你。</p>
+        <ul class="showcase-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            航空级铝合金灯臂，精密加工的哑光质感
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            Ra &gt; 95 高显色指数，还原真实色彩
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            无频闪调光，通过 TÜV 护眼认证
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Showcase: Tech ==================== -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="showcase-grid reverse reveal">
+      <div class="showcase-visual">
+        <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:85%;height:85%;">
+          <defs>
+            <radialGradient id="sensorGrad1" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="oklch(0.7 0.14 55 / 0.3)"/>
+              <stop offset="100%" stop-color="oklch(0.7 0.14 55 / 0)"/>
+            </radialGradient>
+            <radialGradient id="sensorGrad2" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="oklch(0.55 0.08 240 / 0.3)"/>
+              <stop offset="100%" stop-color="oklch(0.55 0.08 240 / 0)"/>
+            </radialGradient>
+          </defs>
+
+          <!-- Ambient sensor visualization -->
+          <circle cx="200" cy="120" r="100" fill="url(#sensorGrad1)">
+            <animate attributeName="r" values="100;110;100" dur="3s" repeatCount="indefinite"/>
+          </circle>
+
+          <!-- Data rings -->
+          <circle cx="200" cy="120" r="80" fill="none" stroke="oklch(0.7 0.14 55 / 0.12)" stroke-width="1.5" stroke-dasharray="4 4">
+            <animateTransform attributeName="transform" type="rotate" from="0 200 120" to="360 200 120" dur="20s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="200" cy="120" r="60" fill="none" stroke="oklch(0.7 0.14 55 / 0.2)" stroke-width="1" stroke-dasharray="3 6">
+            <animateTransform attributeName="transform" type="rotate" from="360 200 120" to="0 200 120" dur="15s" repeatCount="indefinite"/>
+          </circle>
+
+          <!-- Center sensor -->
+          <circle cx="200" cy="120" r="12" fill="oklch(0.35 0.01 50)"/>
+          <circle cx="200" cy="120" r="6" fill="oklch(0.7 0.14 55)">
+            <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+          </circle>
+
+          <!-- Flow lines from sensor -->
+          <path d="M200 132 L200 200" stroke="oklch(0.7 0.14 55 / 0.15)" stroke-width="1.5" stroke-dasharray="5 5">
+            <animate attributeName="stroke-dashoffset" values="0;-30" dur="2s" repeatCount="indefinite"/>
+          </path>
+          <path d="M220 130 L260 180" stroke="oklch(0.55 0.08 240 / 0.12)" stroke-width="1" stroke-dasharray="4 6">
+            <animate attributeName="stroke-dashoffset" values="0;-30" dur="2.5s" repeatCount="indefinite"/>
+          </path>
+          <path d="M180 130 L140 180" stroke="oklch(0.55 0.08 240 / 0.12)" stroke-width="1" stroke-dasharray="4 6">
+            <animate attributeName="stroke-dashoffset" values="0;-30" dur="2em" repeatCount="indefinite"/>
+          </path>
+
+          <!-- Labels -->
+          <rect x="145" y="218" width="110" height="24" rx="12" fill="oklch(0.97 0.006 78)" stroke="oklch(0.9 0.005 75)" stroke-width="1"/>
+          <text x="200" y="234" text-anchor="middle" font-family="Sora, sans-serif" font-size="11" font-weight="600" fill="oklch(0.4 0.015 55)">环境光传感器</text>
+
+          <!-- Time/activity indicators -->
+          <g transform="translate(80, 40)">
+            <circle cx="0" cy="0" r="20" fill="none" stroke="oklch(0.55 0.08 240 / 0.15)" stroke-width="2"/>
+            <text x="0" y="4" text-anchor="middle" font-family="Sora, sans-serif" font-size="8" font-weight="600" fill="oklch(0.55 0.08 240)">07:00</text>
+          </g>
+
+          <g transform="translate(320, 40)">
+            <circle cx="0" cy="0" r="20" fill="none" stroke="oklch(0.7 0.14 55 / 0.15)" stroke-width="2"/>
+            <text x="0" y="4" text-anchor="middle" font-family="Sora, sans-serif" font-size="8" font-weight="600" fill="oklch(0.7 0.14 55)">22:00</text>
+          </g>
+
+          <!-- Color temperature spectrum -->
+          <rect x="90" y="270" width="220" height="4" rx="2" fill="url(#tempGrad)"/>
+          <defs>
+            <linearGradient id="tempGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="oklch(0.6 0.1 60)"/>
+              <stop offset="50%" stop-color="oklch(0.7 0.08 80)"/>
+              <stop offset="100%" stop-color="oklch(0.55 0.08 240)"/>
+            </linearGradient>
+          </defs>
+          <!-- Spectrum labels -->
+          <text x="90" y="284" font-family="Sora, sans-serif" font-size="7" font-weight="500" fill="oklch(0.6 0.01 60)">暖光</text>
+          <text x="295" y="284" text-anchor="end" font-family="Sora, sans-serif" font-size="7" font-weight="500" fill="oklch(0.6 0.01 60)">冷光</text>
+        </svg>
+      </div>
+      <div class="showcase-text">
+        <span class="label">核心技术</span>
+        <h2>光，因你而变</h2>
+        <p>Luma 内置高精度环境光传感器和自适应算法，全天候智能调节，让光线始终处于最佳状态。</p>
+        <ul class="showcase-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            2700K–6500K 无级色温调节，匹配从清晨到深夜的节律
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            自适应亮度算法，始终比环境亮 30%，减少眼部疲劳
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            智能场景识别：阅读、工作、休息、专注，自动匹配光效
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Feature Grid ==================== -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-title reveal">
+      <span class="label">亮点</span>
+      <h2>不止是一盏灯</h2>
+      <p>每一处细节，都为提升桌面体验而设计</p>
+    </div>
+    <div class="feature-grid reveal">
+      <div class="feature-card">
+        <div class="feature-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+            <path d="M2 17l10 5 10-5"/>
+            <path d="M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <h3>精密灯体</h3>
+        <p>航空级铝合金与高密度 ABS 材质，CNC 精加工，哑光表面处理，触感温润。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+          </svg>
+        </div>
+        <h3>快速充电</h3>
+        <p>底座支持 15W Qi 无线快充，手机随放随充，桌面整洁有序。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 20h9"/>
+            <path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/>
+          </svg>
+        </div>
+        <h3>专属 App</h3>
+        <p>通过 Luma App 自定义光效、设置专注时段、查看使用统计，一切尽在掌握。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+            <line x1="9" y1="9" x2="9.01" y2="9"/>
+            <line x1="15" y1="9" x2="15.01" y2="9"/>
+          </svg>
+        </div>
+        <h3>氛围光效</h3>
+        <p>1680 万色氛围灯带，支持自定义场景模式，为工作与休闲营造恰当氛围。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          </svg>
+        </div>
+        <h3>专注模式</h3>
+        <p>内置番茄钟，25 分钟专注 / 5 分钟休息。灯光与计时同步，形成工作节律。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+            <path d="M13.73 21a2 2 0 01-3.46 0"/>
+          </svg>
+        </div>
+        <h3>超静音</h3>
+        <p>无风扇被动散热设计，运行噪音低于 18dB，专注时不被打扰。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CTA ==================== -->
+<section class="cta-section reveal">
+  <div class="container">
+    <h2>准备好升级你的桌面了吗？</h2>
+    <p>Luma 首批限量预售中，预计 2026 年 9 月发货。</p>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn btn-primary btn-lg">立即预购</a>
+      <a href="product.html" class="btn btn-secondary btn-lg">详细了解</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Footer ==================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="nav-logo-dot"></span>
+          Luma
+        </a>
+        <p>为你的桌面而生。智能照明，本该如此。</p>
+      </div>
+      <div class="footer-col">
+        <h4>产品</h4>
+        <ul>
+          <li><a href="product.html">产品详情</a></li>
+          <li><a href="product.html#specs">技术规格</a></li>
+          <li><a href="contact.html">预购</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>关于</h4>
+        <ul>
+          <li><a href="about.html">品牌故事</a></li>
+          <li><a href="about.html#values">设计理念</a></li>
+          <li><a href="contact.html">联系我们</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>支持</h4>
+        <ul>
+          <li><a href="contact.html">帮助中心</a></li>
+          <li><a href="contact.html">售后服务</a></li>
+          <li><a href="contact.html">常见问题</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Luma. All rights reserved.</span>
+      <span>Designed with intention.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

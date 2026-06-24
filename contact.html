@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="联系 Luma — 产品预购、咨询与售后服务。我们期待你的消息。">
+  <title>联系 — Luma</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='oklch(0.7 0.14 55)'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ==================== Navigation ==================== -->
+<nav class="nav" role="navigation" aria-label="主导航">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <span class="nav-logo-dot"></span>
+      Luma
+    </a>
+    <button class="nav-toggle" aria-label="打开菜单" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M3 6h18M3 12h18M3 18h18"/>
+      </svg>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="product.html">产品</a></li>
+      <li><a href="about.html">关于</a></li>
+      <li><a href="contact.html">联系</a></li>
+      <li><a href="contact.html" class="btn btn-primary">预购</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ==================== Page Hero ==================== -->
+<section class="page-hero">
+  <div class="container">
+    <span class="label reveal">联系</span>
+    <h1 class="reveal reveal-delay-1">与我们取得联系</h1>
+    <p class="reveal reveal-delay-2">产品咨询、商务合作、售后服务 — 我们期待你的消息</p>
+  </div>
+</section>
+
+<!-- ==================== Contact Section ==================== -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="contact-grid reveal">
+      <!-- Form -->
+      <form class="contact-form" onsubmit="event.preventDefault();alert('感谢您的留言！我们会尽快回复。');">
+        <div class="form-group">
+          <label for="name">姓名</label>
+          <input type="text" id="name" name="name" placeholder="你的名字" required>
+        </div>
+        <div class="form-group">
+          <label for="email">邮箱</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">主题</label>
+          <select id="subject" name="subject">
+            <option value="">请选择</option>
+            <option value="preorder">产品预购</option>
+            <option value="inquiry">产品咨询</option>
+            <option value="partnership">商务合作</option>
+            <option value="support">售后服务</option>
+            <option value="other">其他</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">留言</label>
+          <textarea id="message" name="message" placeholder="告诉我们你的想法..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg" style="align-self:flex-start;">发送消息</button>
+      </form>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <div>
+            <h4>邮箱</h4>
+            <p>hello@luma.dev<br>support@luma.dev</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div>
+            <h4>地址</h4>
+            <p>深圳市南山区科技园<br>Luma 设计中心</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 20h9"/>
+              <path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/>
+            </svg>
+          </div>
+          <div>
+            <h4>社交媒体</h4>
+            <p>微博 / 小红书 / Twitter<br>@luma_design</p>
+          </div>
+        </div>
+
+        <!-- Pre-order card -->
+        <div style="margin-top:1rem;padding:1.5rem;background:var(--surface-alt);border-radius:var(--radius-lg);border:1px solid var(--border);">
+          <h4 style="margin-bottom:0.5rem;">🚀 首批预售</h4>
+          <p style="font-size:0.875rem;color:var(--text-secondary);margin-bottom:1rem;">第一批 Luma 限量 1000 台，预计 2026 年 9 月发货。预购用户专享早鸟价格与终身软件更新。</p>
+          <button class="btn btn-primary" onclick="alert('预购功能即将上线，敬请期待！')">立即预购</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FAQ ==================== -->
+<section class="section">
+  <div class="container" style="max-width:720px;">
+    <div class="section-title reveal">
+      <span class="label">常见问题</span>
+      <h2>你可能想知道的</h2>
+    </div>
+    <div class="reveal" style="display:flex;flex-direction:column;gap:1.5rem;">
+      <div class="feature-card" style="padding:1.5rem 2rem;">
+        <h3 style="font-size:1rem;margin-bottom:0.5rem;">什么时候可以买到 Luma？</h3>
+        <p style="font-size:0.875rem;color:var(--text-secondary);">首批预售预计 2026 年 9 月发货。现在注册可获取最新消息与早鸟优惠。</p>
+      </div>
+      <div class="feature-card" style="padding:1.5rem 2rem;">
+        <h3 style="font-size:1rem;margin-bottom:0.5rem;">Luma 支持哪些智能家居协议？</h3>
+        <p style="font-size:0.875rem;color:var(--text-secondary);">支持 Apple HomeKit 与 Matter 协议，可与 HomePod、Amazon Alexa、Google Home 等平台联动。</p>
+      </div>
+      <div class="feature-card" style="padding:1.5rem 2rem;">
+        <h3 style="font-size:1rem;margin-bottom:0.5rem;">无线充电兼容所有手机吗？</h3>
+        <p style="font-size:0.875rem;color:var(--text-secondary);">Luma 采用 Qi 2.0 标准，兼容所有支持 Qi 无线充电的设备，包括 iPhone 8 及以上、Android 主流机型及无线耳机。</p>
+      </div>
+      <div class="feature-card" style="padding:1.5rem 2rem;">
+        <h3 style="font-size:1rem;margin-bottom:0.5rem;">保修政策是怎样的？</h3>
+        <p style="font-size:0.875rem;color:var(--text-secondary);">Luma 提供 24 个月质保。7 天无理由退换，15 天内质量问题免费换新。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Footer ==================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="nav-logo-dot"></span>
+          Luma
+        </a>
+        <p>为你的桌面而生。智能照明，本该如此。</p>
+      </div>
+      <div class="footer-col">
+        <h4>产品</h4>
+        <ul>
+          <li><a href="product.html">产品详情</a></li>
+          <li><a href="product.html#specs">技术规格</a></li>
+          <li><a href="contact.html">预购</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>关于</h4>
+        <ul>
+          <li><a href="about.html">品牌故事</a></li>
+          <li><a href="about.html#values">设计理念</a></li>
+          <li><a href="contact.html">联系我们</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>支持</h4>
+        <ul>
+          <li><a href="contact.html">帮助中心</a></li>
+          <li><a href="contact.html">售后服务</a></li>
+          <li><a href="contact.html">常见问题</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Luma. All rights reserved.</span>
+      <span>Designed with intention.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
