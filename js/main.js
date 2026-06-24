@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const sidebarLinks = document.querySelectorAll('.sidebar-list a[data-cat]');
 
   if (grid && typeof PRODUCTS !== 'undefined') {
-    const PER_PAGE = 9;
+    const PER_PAGE = 12;
     let activeCat = 0;
     let activePage = 1;
 
