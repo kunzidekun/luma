@@ -101,6 +101,25 @@ const PRODUCTS = [
     svg: '<rect x="20" y="30" width="80" height="50" rx="10" stroke="#64748b" stroke-width="1.5" fill="#f8fafc"/><rect x="28" y="38" width="64" height="34" rx="6" stroke="#94a3b8" stroke-width="1" fill="#dbeafe"/><line x1="35" y1="48" x2="85" y2="48" stroke="#2563eb" stroke-width="1.5" opacity="0.3"/><line x1="35" y1="55" x2="70" y2="55" stroke="#2563eb" stroke-width="1.5" opacity="0.4"/><line x1="35" y1="62" x2="78" y2="62" stroke="#2563eb" stroke-width="1.5" opacity="0.3"/><rect x="45" y="85" width="30" height="10" rx="3" fill="#e2e8f0"/>'
   }
 
+  // ===== Category 7: X-Ray Accessories =====
+  {
+    id: 13, category: 7,
+    name: 'XRP-100 Portable X-Ray Stand',
+    svg: '<rect x="30" y="15" width="60" height="90" rx="6" stroke="#64748b" stroke-width="1.5" fill="#f8fafc"/><rect x="40" y="25" width="40" height="50" rx="4" stroke="#94a3b8" stroke-width="1" fill="#dbeafe"/><rect x="35" y="80" width="50" height="12" rx="3" stroke="#64748b" stroke-width="1" fill="#eff6ff"/><line x1="45" y1="35" x2="75" y2="35" stroke="#2563eb" stroke-width="1.5" opacity="0.3"/><line x1="45" y1="45" x2="65" y2="45" stroke="#2563eb" stroke-width="1.5" opacity="0.3"/>'
+  },
+  // ===== Category 12: Veterinary Equipment =====
+  {
+    id: 14, category: 12,
+    name: 'VAS-200 Veterinary Anesthesia Machine',
+    svg: '<rect x="25" y="20" width="70" height="80" rx="8" stroke="#64748b" stroke-width="1.5" fill="#f8fafc"/><rect x="35" y="30" width="50" height="30" rx="4" stroke="#94a3b8" stroke-width="1" fill="#dbeafe"/><rect x="35" y="65" width="50" height="20" rx="4" stroke="#94a3b8" stroke-width="1" fill="#eff6ff"/><circle cx="50" cy="45" r="4" fill="#2563eb" opacity="0.3"/><circle cx="70" cy="45" r="4" fill="#2563eb" opacity="0.3"/><rect x="35" y="22" width="12" height="6" rx="2" fill="#2563eb" opacity="0.4"/>'
+  },
+  // ===== Category 1: Clinical Analytical Instrument =====
+  {
+    id: 15, category: 1,
+    name: 'PCS-4000 High-Speed Chemistry Analyzer',
+    svg: '<rect x="20" y="15" width="80" height="90" rx="8" stroke="#64748b" stroke-width="1.5" fill="#f8fafc"/><rect x="35" y="30" width="50" height="35" rx="4" stroke="#94a3b8" stroke-width="1" fill="#dbeafe"/><rect x="40" y="38" width="40" height="8" rx="2" fill="#2563eb" opacity="0.4"/><rect x="40" y="50" width="30" height="6" rx="2" fill="#2563eb" opacity="0.3"/><circle cx="60" cy="78" r="10" stroke="#94a3b8" stroke-width="1.5" fill="#eff6ff"/><line x1="60" y1="72" x2="60" y2="84" stroke="#2563eb" stroke-width="2"/><line x1="54" y1="78" x2="66" y2="78" stroke="#2563eb" stroke-width="2"/>'
+  },
+
   // == ADD NEW PRODUCTS HERE ==
   // Copy a block above (from { id: ... to }), paste below, change values.
 ];
