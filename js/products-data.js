@@ -99,7 +99,7 @@ const PRODUCTS = [
     id: 12, category: 13,
     name: 'PPM-500 Patient Monitor',
     svg: '<rect x="20" y="30" width="80" height="50" rx="10" stroke="#64748b" stroke-width="1.5" fill="#f8fafc"/><rect x="28" y="38" width="64" height="34" rx="6" stroke="#94a3b8" stroke-width="1" fill="#dbeafe"/><line x1="35" y1="48" x2="85" y2="48" stroke="#2563eb" stroke-width="1.5" opacity="0.3"/><line x1="35" y1="55" x2="70" y2="55" stroke="#2563eb" stroke-width="1.5" opacity="0.4"/><line x1="35" y1="62" x2="78" y2="62" stroke="#2563eb" stroke-width="1.5" opacity="0.3"/><rect x="45" y="85" width="30" height="10" rx="3" fill="#e2e8f0"/>'
-  }
+  },
 
   // ===== Category 7: X-Ray Accessories =====
   {
